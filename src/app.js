@@ -23,9 +23,16 @@ const john = makePerson(obj);
 console.log({ john });
  */
 
-const { getPokemonById } = require('./js-foundation/06-promises');
+/* const { getPokemonById } = require('./js-foundation/06-promises');
 
 getPokemonById(4)
   .then((pokemon) => console.log({ pokemon }))
   .catch((err) => console.log(err.Error))
   .finally(() => console.log('finalizado'));
+ */
+
+const { buildLogger } = require('./plugins');
+
+const logger = buildLogger('app.js');
+logger.log('hola mundo');
+logger.error('evento critico');
