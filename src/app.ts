@@ -17,6 +17,8 @@ getUserById(id, function (error, user) {
 });
 */
 
+
+
 //!SECTION referencia a funcion factory
 /* const { buildMakePerson } = require('./js-foundation/05-factory');
 const makePerson = buildMakePerson({ getUUID, getAge });
@@ -26,14 +28,18 @@ console.log({ john });
  */
 
 /* const { getPokemonById } = require('./js-foundation/06-promises');
-
 */
-getPokemonById(12)
+
+
+getPokemonById(4)
   .then((pokemon) => console.log({ pokemon }))
-  .catch((err) => console.log(err.Error))
+  .catch((err) => console.error(err.Error))
   .finally(() => console.log('finalizado'));
 
-/* const logger = buildLogger('app.ts');
+
+
+
+const logger = buildLogger('app.ts');
 logger.log('hola mundo');
 logger.error('evento critico');
- */
+

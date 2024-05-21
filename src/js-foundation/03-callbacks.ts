@@ -16,12 +16,12 @@ const users: User[] = [
 
 export function getUserById(
   id: Number,
-  callback: (err?: String, user?: User) => void
+  callback: (err?: String | null, user?: User) => void
 ) {
   const user = users.find(function (user) {
     return user.id === id;
   });
   if (!user) callback(`User not found with id ${id}`);
 
-  return callback(undefined, user);
+  return callback(null, user);
 }
