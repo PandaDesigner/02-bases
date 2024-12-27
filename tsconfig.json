@@ -106,5 +106,6 @@
     // "skipDefaultLibCheck": true,                      /* Omitir la verificación de tipos de archivos .d.ts que se incluyen con TypeScript. */
     "skipLibCheck": true /* Omitir la verificación de tipos de todos los archivos .d.ts. */
   },
-  "exclude": ["jest.config.ts", "tests"]
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", "**/*.spec.ts", "**/*.test.ts"]
 }

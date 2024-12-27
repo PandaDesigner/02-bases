@@ -42,8 +42,6 @@ const config: Config = {
   //   "lcov",
   //   "clover"
   // ],
-  preset: 'ts-jest',
-  testEnvironment: "jest-environment-node",
 
   // Un objeto que configura la aplicación de umbrales mínimos para los resultados de cobertura
   // coverageThreshold: undefined,
@@ -104,7 +102,7 @@ const config: Config = {
   // notifyMode: "failure-change",
 
   // Un preset que se usa como base para la configuración de Jest
-  // preset: undefined,
+  preset: 'ts-jest',
 
   // Ejecutar pruebas desde uno o más proyectos
   // projects: undefined,
@@ -148,7 +146,7 @@ const config: Config = {
   // snapshotSerializers: [],
 
   // El entorno de prueba que se utilizará para las pruebas
-  // testEnvironment: "jest-environment-node",
+  testEnvironment: "jest-environment-node",
 
   // Opciones que se pasarán al testEnvironment
   // testEnvironmentOptions: {},

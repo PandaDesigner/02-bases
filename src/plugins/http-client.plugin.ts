@@ -6,15 +6,21 @@ export const httpClientPlughin = {
       method: 'get',
       url: url
     });
-    const pokemon = await resp.data;
+    const data = await resp.data;
 
-    return pokemon;
+    return data;
     /*  const resp = await fetch(url);
     const data = await resp.json();
     return data; */
   },
 
-  post: async (url: string, body: any) => {},
-  put: async (url: string, body: any) => {},
-  delete: async (url: string) => {}
+  post: async (url: string, body: any) => {
+    throw new Error('Not implemented');
+  },
+  put: async (url: string, body: any) => {
+    throw new Error('Not implemented');
+  },
+  delete: async (url: string) => {
+    throw new Error('Not implemented');
+  }
 };
