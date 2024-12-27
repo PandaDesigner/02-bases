@@ -25,3 +25,4 @@ export function getUserById(
 
   return callback(null, user);
 }
+

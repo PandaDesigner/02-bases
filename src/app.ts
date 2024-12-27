@@ -30,16 +30,14 @@ console.log({ john });
 /* const { getPokemonById } = require('./js-foundation/06-promises');
 */
 
-
+/*
 getPokemonById(4)
   .then((pokemon) => console.log({ pokemon }))
   .catch((err) => console.error(err.Error))
   .finally(() => console.log('finalizado'));
 
-
-
-
 const logger = buildLogger('app.ts');
 logger.log('hola mundo');
 logger.error('evento critico');
 
+*/
